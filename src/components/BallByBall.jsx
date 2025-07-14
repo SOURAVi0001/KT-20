@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import axios from "axios";
-import './BallByBall.css';
+import './BallByBall.css';  // must match the actual file name exactly
 
 const BallByBall = () => {
   const [ballData, setBallData] = useState(null);
