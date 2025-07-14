@@ -1,0 +1,181 @@
+/* Page Background */
+.fixtures-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #cf2929, #2a5298, #cf2929); /* Neutral light background */
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+  border-radius: 10px;
+}
+
+.fixtures-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0d47a1;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.filters input::placeholder {
+  color: #999;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #7201b7;
+}
+
+/* Fixture Grid */
+.fixtures-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Fixture Card with violet + blue border and shadow */
+.fixture-card {
+  background: #c4bebe;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.2),
+              0 0 0 2px rgba(114, 1, 183, 0.3);
+}
+
+.fixture-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.3),
+              0 0 0 2px rgba(114, 1, 183, 0.4);
+}
+
+/* Header */
+.fixture-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.no-logo {
+  width: 36px;
+  height: 36px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 18px;
+  color: #7201b7;
+}
+
+/* Fixture Text */
+.fixture-body p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Card */
+.popup {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid #7201b7;
+  max-width: 400px;
+  width: 90%;
+  color: #222;
+  box-shadow: 0 0 20px rgba(13, 71, 161, 0.3);
+  animation: fadeUp 0.4s ease;
+}
+
+.popup h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: #0d47a1;
+}
+
+.popup p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.popup button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.popup button:hover {
+  background: #08306b;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

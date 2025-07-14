@@ -1,0 +1,79 @@
+.pollContainer {
+  flex: 1;
+  min-width: 300px;
+  max-width: 900px;
+  height :435px;
+  margin:50px;
+  padding: 20px;
+  background: linear-gradient(135deg, #102180 0%, #e5ebee 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+    
+    .pollTitle {
+      text-align: center;
+      color: #f5f4f4;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    
+    .teamsContainer {
+      margin-top: 10%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    .teamCard {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(189, 71, 71);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    
+    .teamCard:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .selected {
+      border-color: #7345df;
+    }
+    
+    .teamLogo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .voteResults {
+      margin-top: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .voteBar {
+      height: 45px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      transition: width 0.5s ease;
+    }
+    
+    .totalVotes {
+      text-align: center;
+      margin-top: 5%;
+      color: #3f3c3c;
+      font-weight: 900;
+      font-style: italic;
+    }

@@ -1,0 +1,96 @@
+
+.container {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1800px;
+      padding: 15px;
+    }
+    
+    .panel {
+      background: linear-gradient(to right, #1f13c7, #8d2727);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+    
+    /* Panel Heading */
+    .panelHeading {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    
+    .title {
+      font-size: 20px;
+      flex: 1;
+      text-align: center;
+    }
+    
+    /* Button Group - Responsive */
+    .btnGroup {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    /* Search Box */
+    .search {
+      padding: 5px;
+      border-radius: 5px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+    
+    /* Table */
+    .panelBody {
+      margin-top: 15px;
+      overflow-x: auto;
+    }
+    
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+    
+    /* Actions */
+    .actionList {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .actionIcon {
+      cursor: pointer;
+      color: white;
+    }
+    
+    /* Footer */
+    .panelFooter {
+      margin-top: 10px;
+      color: white;
+      text-align: center;
+    }

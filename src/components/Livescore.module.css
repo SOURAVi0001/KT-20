@@ -1,0 +1,254 @@
+/* General Styles */
+.container {
+  flex: 1;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(45deg, #cf2929, #2a5298, #cf2929);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.matchTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.matchVenue {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.mainScore {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.vs {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Live Match Update */
+.liveUpdate {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.matchStatus {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.live {
+  background: red;
+  color: white;
+  animation: pulse 1.5s infinite;
+}
+
+.completed {
+  background: green;
+  color: white;
+}
+
+.matchLink {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(45deg, #ff5733, #ffcc00);
+  border-radius: 6px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.matchLink:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ffcc00, #ff5733);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px red; }
+  50% { box-shadow: 0 0 20px red; }
+  100% { box-shadow: 0 0 10px red; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scoreboard {
+    flex-direction: column;
+  }
+
+  .matchTitle, .matchVenue {
+    font-size: 18px;
+  }
+
+  .mainScore {
+    font-size: 22px;
+  }
+}
+
+/* No Live Match Container */
+.noMatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px 20px;  /* Increased padding from top */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+  margin-top: 50px; /* Adds spacing from top */
+}
+
+/* Cricket Ball Animation */
+.noMatch::after {
+  content: "🏏";
+  font-size: 50px;
+  display: block;
+  margin-top: 15px;
+  animation: roll 2s infinite linear;
+}
+
+/* Button to Refresh or Check Upcoming Matches */
+.checkUpcoming {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #ff5722;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkUpcoming:hover {
+  background: #e64a19;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.noMatchContainer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(45deg, #cf2929, #2a5298, #cf2929);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.noMatchImage {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.noMatchText {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.upcomingText {
+  font-size: 18px;
+  color: #777;
+}
+
+.upcomingBtn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.upcomingBtn:hover {
+  background: #0056b3;
+}
+ 
+.singleMatch {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+

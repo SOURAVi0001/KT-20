@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(45deg, #cf2929, #2a5298, #cf2929);
+  animation: navbarAnimation 6s infinite alternate ease-in-out;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes navbarAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffeb3b, #fff59d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #ffeb3b;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.socialMedia {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffeb3b;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1e1e1e;
+    color: white;
+  }
+  .nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .home-sections {
+    padding: 2rem;
+  }
+  .gallery img {
+    width: 200px;
+    height: 120px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  .point-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .point-table th, .point-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+  }
+  

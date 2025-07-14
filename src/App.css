@@ -1,0 +1,19 @@
+/* src/App.css */
+.app-container {
+  background: linear-gradient(to right, #0d47a1, #7201b7);
+  min-height: 100vh;
+  padding-top: 4rem;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .app-container {
+    padding-top: 2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
