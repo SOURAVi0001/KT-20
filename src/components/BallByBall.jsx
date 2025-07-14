@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./ballByBall.css";
+import './BallByBall.css';
 
 const BallByBall = () => {
   const [ballData, setBallData] = useState(null);
@@ -21,7 +21,7 @@ const BallByBall = () => {
 
   if (!ballData) return <div className="status">Loading ball-by-ball data...</div>;
 
-  const { innings1Balls, latestBatting, latestBowling } = ballData;
+  const { innings1Balls } = ballData;
 
   const renderBallCommentary = () => {
     const overs = innings1Balls?.oversMap || {};
